@@ -158,13 +158,11 @@
 <script >
 
 const form = document.querySelector('.content_form');
-    //   button = document.querySelector('button');
 
 
 
     form.addEventListener("submit",(e)=>{
         e.preventDefault();
-        // alert('ok');
    
   const  name = document.querySelector('.name'),
     email = document.querySelector('.email'),
@@ -172,37 +170,32 @@ const form = document.querySelector('.content_form');
 
 
 
-    // Email.send({
-    // Host : "smtp.elasticemail.com",
-    // Username : "taraleharsh0@gmail.com",
-    // Password : "81C713F50F14A5ED523428CF358F5B42CE3B",
-    // To : 'harshstarale@gmail.com',
-    // From : "taraleharsh0@gmail.com",
-    // Subject : "This is the subject",
-    // Body : msg
-    // }).then(
-    //       alert("massage")
-    // );
-
     Email.send({
-    SecureToken : "f6ecd90e-1614-4eb1-877f-dd4af36a51c1",
+    Host : "smtp.elasticemail.com",
+    Username : "taraleharsh0@gmail.com",
+    Password : "81C713F50F14A5ED523428CF358F5B42CE3B",
     To : 'harshstarale@gmail.com',
     From : "taraleharsh0@gmail.com",
     Subject : "This is the subject",
-    Body : msg.value
-	// Attachments : [
-	// {
-	// 	name : "smtpjs.png",
-	// 	path : "https://networkprogramming.files.wordpress.com/2017/11/smtpjs.png"
-	// }]
-}).then(
-  message => alert(message)
-);
+    Body : msg
+    }).then(
+          alert("massage")
+    );
+
+//     Email.send({
+//     SecureToken : "f6ecd90e-1614-4eb1-877f-dd4af36a51c1",
+//     To : 'harshstarale@gmail.com',
+//     From : "taraleharsh0@gmail.com",
+//     Subject : "This is the subject",
+//     Body : msg.value
+	
+// }).then(
+//   message => alert(message)
+// );
 
     });
 
 
-    // form.addEventListener("submit", sendrMsg());
 
 </script>
 <script src="script.js"></script>
